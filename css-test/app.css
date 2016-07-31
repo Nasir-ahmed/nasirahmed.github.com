@@ -43,10 +43,16 @@ img {
   transition: all 200ms ease-in-out;
   padding: 10px;
   margin: 10px auto;
+  height: 140px;
 }
 .btn-price:hover, .btn-price:focus, .btn-price:active {
   color: #fff;
   opacity: 0.9;
+}
+@media (max-width: 767px) {
+  .btn-price {
+    height: auto;
+  }
 }
 
 .btn-con {
@@ -3856,7 +3862,12 @@ iframe table.infusion-field-container td.infusion-field-label-container {
 }
 
 .pricing-content .footerInfo {
-  min-height: 265px !important;
+  min-height: 301px !important;
+}
+@media (max-width: 767px) {
+  .pricing-content .footerInfo {
+    min-height: 100px !important;
+  }
 }
 
 /*Pricing Table Mega v3
